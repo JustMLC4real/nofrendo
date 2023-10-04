@@ -1,14 +1,14 @@
 # Nofrendo
 
-[![Build](https://github.com/nwagyu/nofrendo/actions/workflows/build.yml/badge.svg)](https://github.com/nwagyu/nofrendo/actions/workflows/build.yml)
+[![Build](https://github.com/JustMLC/nofrendo/actions/workflows/build.yml/badge.svg)](https://github.com/JustMLC/nofrendo/actions/workflows/build.yml)
 
 This app is a [NES](https://en.wikipedia.org/wiki/Nintendo_Entertainment_System) emulator that runs on the [NumWorks calculator](https://www.numworks.com).
 
 ## Install the app
 
 To install this app, you'll need to:
-1. Download the latest `nofrendo.nwa` file from the [Releases](https://github.com/nwagyu/nofrendo/releases) page
-2. Extract a `cartridge.nes` ROM dump from your NES cartridge, or, alternatively, use the provided `src/2048.nes` file.
+1. Download the latest `nofrendo.nwa` file from the [Releases](https://github.com/JustMLC/nofrendo/releases) page
+2. Extract a `cartridge.nes` ROM dump from your NES cartridge, or, alternatively, use the provided [2048.nes](https://www.numworks.com) file.
 2. Head to [my.numworks.com/apps](https://my.numworks.com/apps) to send the `nwa` file on your calculator along the `nes` file.
 
 ## How to use the app
@@ -17,7 +17,7 @@ The controls are pretty obvious because the NES gamepad looks a lot like the Num
 
 |NES controls|NumWorks|
 |-|-|
-|Arrow|Arrows|
+|Arrows|Arrows|
 |B|Back|
 |A|OK|
 |Select|Shift|
