@@ -88,7 +88,7 @@ objs = $(addprefix output/nofrendo/,\
   pcx.o \
 )
 
-ifeq ($(AUDIO),1)
+ifeq ($(AUDIO),0)
 objs = $(addprefix output/nofrendo/,\
   sndhrdw/fds_snd.o \
   sndhrdw/mmc5_snd.o \
