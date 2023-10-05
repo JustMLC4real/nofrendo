@@ -7,7 +7,7 @@ This app is a [NES](https://en.wikipedia.org/wiki/Nintendo_Entertainment_System)
 ## Install the app
 
 To install this app, you'll need to:
-1. Download the latest `nofrendo.nwa` file from the [Releases](https://github.com/JustMLC4real/nofrendo/releases) page
+1. Download the latest `nofrendo.nwa` [here](https://github.com/JustMLC4real/nofrendo/releaseslatest).
 2. Extract a `cartridge.nes` ROM dump from your NES cartridge, or, alternatively, use the provided [2048.nes](https://github.com/JustMLC4real/nofrendo/raw/master/src/2048.nes) file.
 2. Head to [my.numworks.com/apps](https://my.numworks.com/apps) to send the `.nwa` file on your calculator along the `.nes` file.
 
