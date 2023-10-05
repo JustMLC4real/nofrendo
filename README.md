@@ -1,4 +1,4 @@
-# Nofrendo
+# nofrendo reborn
 
 [![Build](https://github.com/JustMLC4real/nofrendo/actions/workflows/build.yml/badge.svg)](https://github.com/JustMLC4real/nofrendo/actions/workflows/build.yml)
 
