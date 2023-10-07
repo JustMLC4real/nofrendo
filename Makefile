@@ -86,11 +86,10 @@ objs = $(addprefix output/nofrendo/,\
   nes/nesstate.o \
   nofrendo.o \
   pcx.o \
-  region.o  # Removed the backslash here
 )
 
 ifeq ($(AUDIO),0)
-objs += $(addprefix output/nofrendo/,\
+objs = $(addprefix output/nofrendo/,\
   sndhrdw/fds_snd.o \
   sndhrdw/mmc5_snd.o \
   sndhrdw/nes_apu.o \
@@ -111,23 +110,30 @@ objs += $(addprefix output/, \
   stubs.o \
 )
 
-.PHONY: build clean
+.PHONY: build
+build: output/nofrendo.nwa
 
-build: output/nofrendo.bin
+.PHONY: check
+check: output/nofrendo.bin
 
-output/nofrendo.bin: $(objs)
+output/nofrendo.bin: output/nofrendo.nwa
+	@echo "NWLINK  $@"
+	$Q $(NWLINK) nwa-bin -d src/2048.nes $< $@
+
+output/nofrendo.nwa: $(objs)
 	@echo "LD      $@"
-	$(Q) $(CC) $(CFLAGS) $(LDFLAGS) $^ -lm -o $@
+	$Q $(CC) $(CFLAGS) $(LDFLAGS) $^ -lm -o $@
 
 output/%.o: src/%.c
 	@mkdir -p $(dir $@)
 	@echo "CC      $^"
-	$(Q) $(CC) $(CFLAGS) -c $^ -o $@
+	$Q $(CC) $(CFLAGS) -c $^ -o $@
 
 output/icon.o: src/icon.png
 	@echo "ICON    $<"
 	$(Q) $(NWLINK) png-icon-o $< $@
 
+.PHONY: clean
 clean:
 	@echo "CLEAN"
-	$(Q) rm -rf output
+	$Q rm -rf output
