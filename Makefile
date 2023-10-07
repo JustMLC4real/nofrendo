@@ -108,6 +108,7 @@ objs += $(addprefix output/, \
   osd.o \
   statefile_wrapper.o \
   stubs.o \
+  region.o \   # Include region.c here
 )
 
 .PHONY: build
